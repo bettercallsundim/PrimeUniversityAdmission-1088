@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration - Prime University Admission Portal</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="assets/logo.png">
+  </head>
+  <body>
+    <!-- Header Section with Navigation -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+          <!-- University Logo -->
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="assets/images/logo.png"
+              alt="Prime University Logo"
+              height="50"
+            />
+            Prime University
+          </a>
+
+          <!-- Mobile Toggle Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navigation Menu -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+
+              <!-- Dropdown Menu: Academics -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Academics
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Departments</a></li>
+                  <li><a class="dropdown-item" href="#">Programs</a></li>
+                  <li><a class="dropdown-item" href="#">Faculty</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Academic Calendar</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Menu: Admissions -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Admissions
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Admission Requirements</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Tuition & Fees</a></li>
+                  <li><a class="dropdown-item" href="#">Scholarships</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="registration.html"
+                      >Apply Now</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Menu: Campus Life -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Campus Life
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Student Activities</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Housing</a></li>
+                  <li><a class="dropdown-item" href="#">Dining</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Sports & Recreation</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+
+              <!-- Registration Button - Active on this page -->
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-outline-light ms-2 register-btn active text-black"
+                  href="registration.html"
+                  >Register</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Registration Form Section -->
+      <section class="registration-section py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="card shadow">
+                <div class="card-header bg-primary text-white text-center py-3">
+                  <h2>Student Registration</h2>
+                  <p class="mb-0">
+                    Fill out the form below to apply for admission
+                  </p>
+                </div>
+
+                <div class="card-body p-4">
+                  <!-- Form with validation -->
+                  <form
+                    id="registrationForm"
+                    enctype="multipart/form-data"
+                    novalidate
+                  >
+                    <!-- Personal Information -->
+                    <h4 class="mb-3">Personal Information</h4>
+
+                    <div class="row mb-3">
+                      <div class="col-md-6 mb-3 mb-md-0">
+                        <label for="firstName" class="form-label"
+                          >First Name <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="firstName"
+                          name="firstName"
+                          required
+                        />
+                        <div class="invalid-feedback">
+                          Please enter your first name.
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="lastName" class="form-label"
+                          >Last Name <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="lastName"
+                          name="lastName"
+                          required
+                        />
+                        <div class="invalid-feedback">
+                          Please enter your last name.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <div class="col-md-6 mb-3 mb-md-0">
+                        <label for="dateOfBirth" class="form-label"
+                          >Date of Birth
+                          <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="date"
+                          class="form-control"
+                          id="dateOfBirth"
+                          name="dateOfBirth"
+                          required
+                        />
+                        <div class="invalid-feedback">
+                          Please enter your date of birth.
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <label class="form-label"
+                          >Gender <span class="text-danger">*</span></label
+                        >
+                        <div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="gender"
+                              id="genderMale"
+                              value="male"
+                              required
+                            />
+                            <label class="form-check-label" for="genderMale"
+                              >Male</label
+                            >
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="gender"
+                              id="genderFemale"
+                              value="female"
+                              required
+                            />
+                            <label class="form-check-label" for="genderFemale"
+                              >Female</label
+                            >
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="gender"
+                              id="genderOther"
+                              value="other"
+                              required
+                            />
+                            <label class="form-check-label" for="genderOther"
+                              >Other</label
+                            >
+                          </div>
+                          <div
+                            class="invalid-feedback d-block"
+                            id="genderFeedback"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="email" class="form-label"
+                        >Email Address <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Please enter a valid email address.
+                      </div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="phone" class="form-label"
+                        >Phone Number <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="phone"
+                        name="phone"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Please enter a valid phone number.
+                      </div>
+                    </div>
+
+                    <!-- Address Information -->
+                    <h4 class="mb-3 mt-4">Address Information</h4>
+
+                    <div class="mb-3">
+                      <label for="address" class="form-label"
+                        >Street Address
+                        <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="address"
+                        name="address"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Please enter your street address.
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <div class="col-md-6 mb-3 mb-md-0">
+                        <label for="city" class="form-label"
+                          >City <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="city"
+                          name="city"
+                          required
+                        />
+                        <div class="invalid-feedback">
+                          Please enter your city.
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="postalCode" class="form-label"
+                          >Postal Code <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="postalCode"
+                          name="postalCode"
+                          required
+                        />
+                        <div class="invalid-feedback">
+                          Please enter your postal code.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="country" class="form-label"
+                        >Country <span class="text-danger">*</span></label
+                      >
+                      <select
+                        class="form-select"
+                        id="country"
+                        name="country"
+                        required
+                      >
+                        <option value="">Select Country</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="India">India</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="Other">Other</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select your country.
+                      </div>
+                    </div>
+
+                    <!-- Academic Information -->
+                    <h4 class="mb-3 mt-4">Academic Information</h4>
+
+                    <div class="mb-3">
+                      <label for="program" class="form-label"
+                        >Desired Program
+                        <span class="text-danger">*</span></label
+                      >
+                      <select
+                        class="form-select"
+                        id="program"
+                        name="program"
+                        required
+                      >
+                        <option value="">Select Program</option>
+                        <option value="CSE">
+                          B.Sc. in Computer Science & Engineering
+                        </option>
+                        <option value="EEE">
+                          B.Sc. in Electrical & Electronic Engineering
+                        </option>
+                        <option value="BBA">
+                          Bachelor of Business Administration
+                        </option>
+                        <option value="English">B.A. in English</option>
+                        <option value="Law">Bachelor of Laws</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select your desired program.
+                      </div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="previousInstitution" class="form-label"
+                        >Previous Institution
+                        <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="previousInstitution"
+                        name="previousInstitution"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Please enter your previous institution.
+                      </div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="cgpa" class="form-label"
+                        >CGPA/GPA <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="cgpa"
+                        name="cgpa"
+                        min="0"
+                        max="5"
+                        step="0.01"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Please enter your CGPA/GPA (0-5).
+                      </div>
+                    </div>
+
+                    <!-- Documents Upload -->
+                    <h4 class="mb-3 mt-4">Documents</h4>
+
+                    <div class="mb-3">
+                      <label for="profilePicture" class="form-label"
+                        >Profile Picture
+                        <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="profilePicture"
+                        name="profilePicture"
+                        accept="image/*"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Please upload your profile picture.
+                      </div>
+                      <small class="form-text text-muted"
+                        >Upload a recent passport-size photograph (JPEG, PNG,
+                        max 2MB).</small
+                      >
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="academicDocuments" class="form-label"
+                        >Academic Documents
+                        <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="academicDocuments"
+                        name="academicDocuments"
+                        accept=".pdf,.doc,.docx"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Please upload your academic documents.
+                      </div>
+                      <small class="form-text text-muted"
+                        >Upload your academic certificates and transcripts as a
+                        single PDF file (max 5MB).</small
+                      >
+                    </div>
+
+                    <!-- Additional Information -->
+                    <h4 class="mb-3 mt-4">Additional Information</h4>
+
+                    <div class="mb-3">
+                      <label for="comments" class="form-label"
+                        >Comments or Special Requirements</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="comments"
+                        name="comments"
+                        rows="3"
+                      ></textarea>
+                    </div>
+
+                    <div class="mb-3 form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="termsCheck"
+                        name="termsCheck"
+                        required
+                      />
+                      <label class="form-check-label" for="termsCheck">
+                        I agree to the
+                        <a
+                          href="#"
+                          data-bs-toggle="modal"
+                          data-bs-target="#termsModal"
+                          >Terms and Conditions</a
+                        >
+                        <span class="text-danger">*</span>
+                      </label>
+                      <div class="invalid-feedback">
+                        You must agree to the terms and conditions.
+                      </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center mt-4">
+                      <button type="submit" class="btn btn-primary btn-lg px-5">
+                        Submit Application
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <!-- Success Message (Initially Hidden) -->
+              <div
+                id="registrationSuccess"
+                class="alert alert-success mt-4 text-center d-none"
+              >
+                <i class="fas fa-check-circle fa-2x mb-3"></i>
+                <h4>Registration Successful!</h4>
+                <p>
+                  Your application has been submitted successfully. We will
+                  contact you shortly with further instructions.
+                </p>
+                <a href="index.html" class="btn btn-outline-success mt-2"
+                  >Return to Home</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Terms and Conditions Modal -->
+    <div
+      class="modal fade"
+      id="termsModal"
+      tabindex="-1"
+      aria-labelledby="termsModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title" id="termsModalLabel">
+              Terms and Conditions
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h5>1. General Terms</h5>
+            <p>
+              By submitting this application, you acknowledge that all
+              information provided is accurate and complete to the best of your
+              knowledge. Prime University reserves the right to verify all
+              information submitted.
+            </p>
+
+            <h5>2. Application Process</h5>
+            <p>
+              Submission of this application does not guarantee admission. All
+              applications will be reviewed according to the university's
+              admission criteria.
+            </p>
+
+            <h5>3. Personal Data</h5>
+            <p>
+              You consent to Prime University collecting, storing, and
+              processing your personal data for the purpose of your application
+              and subsequent enrollment if accepted.
+            </p>
+
+            <h5>4. Communication</h5>
+            <p>
+              You agree to receive communications from Prime University
+              regarding your application and other related information via
+              email, phone, or postal mail.
+            </p>
+
+            <h5>5. Documentation</h5>
+            <p>
+              All documents submitted become the property of Prime University
+              and will not be returned. Falsification of any document will
+              result in immediate rejection of the application or dismissal if
+              already enrolled.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+              id="agreeTerms"
+            >
+              I Agree
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Prime University</h5>
+            <p>Shaping Future Leaders Through Quality Education</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> 123 University Avenue,
+              Dhaka<br />
+              <i class="fas fa-phone"></i> (880) 123-4567<br />
+              <i class="fas fa-envelope"></i> info@primeuniversity.edu
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">About Us</a></li>
+              <li><a href="#" class="text-white">Programs</a></li>
+              <li><a href="#" class="text-white">Admissions</a></li>
+              <li><a href="#" class="text-white">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h5>Connect With Us</h5>
+            <div class="social-links">
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col text-center">
+            <p class="mb-0">
+              &copy; 2025 Prime University. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS for Form Validation -->
+    <script src="assets/js/validation.js"></script>
+  </body>
+</html>

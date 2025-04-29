@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prime University Admission Portal</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="assets/logo.png">
+  </head>
+  <body>
+    <!-- Header Section with Navigation -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+          <!-- University Logo -->
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="assets/images/logo.png"
+              alt="Prime University Logo"
+              height="50"
+            />
+            Prime University
+          </a>
+
+          <!-- Mobile Toggle Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navigation Menu -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+
+              <!-- Dropdown Menu: Academics -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Academics
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Departments</a></li>
+                  <li><a class="dropdown-item" href="#">Programs</a></li>
+                  <li><a class="dropdown-item" href="#">Faculty</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Academic Calendar</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Menu: Admissions -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Admissions
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Admission Requirements</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Tuition & Fees</a></li>
+                  <li><a class="dropdown-item" href="#">Scholarships</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="registration.html"
+                      >Apply Now</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Dropdown Menu: Campus Life -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Campus Life
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Student Activities</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Housing</a></li>
+                  <li><a class="dropdown-item" href="#">Dining</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Sports & Recreation</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+
+              <!-- Registration Button -->
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-outline-light ms-2 register-btn"
+                  href="registration.html"
+                  >Register</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Sliding Banner Section -->
+      <section
+        id="banner-slider"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#banner-slider"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#banner-slider"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#banner-slider"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/images/banner1.jpg"
+              class="d-block w-100"
+              alt="Campus View"
+            />
+            <div class="carousel-caption">
+              <h2>Welcome to Prime University</h2>
+              <p>Shaping Future Leaders Through Quality Education</p>
+              <a href="registration.html" class="btn btn-primary">Apply Now</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/banner2.jpg"
+              class="d-block w-100"
+              alt="Students"
+            />
+            <div class="carousel-caption">
+              <h2>Excellence in Education</h2>
+              <p>Join Our Community of Scholars and Innovators</p>
+              <a href="registration.html" class="btn btn-primary">Apply Now</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/banner3.jpg"
+              class="d-block w-100"
+              alt="Graduation"
+            />
+            <div class="carousel-caption">
+              <h2>Your Success Starts Here</h2>
+              <p>Admission Open for Spring 2025</p>
+              <a href="registration.html" class="btn btn-primary">Apply Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#banner-slider"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#banner-slider"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+
+      <!-- Welcome Section -->
+      <section class="welcome-section py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+              <h2 class="section-title">Welcome to Prime University</h2>
+              <p class="lead">
+                Prime University is dedicated to academic excellence,
+                innovation, and preparing students for leadership in a rapidly
+                changing world.
+              </p>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <!-- Feature Cards -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <div class="card-body text-center">
+                  <i class="fas fa-graduation-cap fa-3x text-primary mb-3"></i>
+                  <h3 class="card-title">Quality Education</h3>
+                  <p class="card-text">
+                    Our programs are designed with industry needs in mind,
+                    ensuring graduates are well-prepared for successful careers.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <div class="card-body text-center">
+                  <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                  <h3 class="card-title">Expert Faculty</h3>
+                  <p class="card-text">
+                    Learn from industry experts and distinguished academics who
+                    bring real-world experience to the classroom.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <div class="card-body text-center">
+                  <i class="fas fa-laptop-code fa-3x text-primary mb-3"></i>
+                  <h3 class="card-title">Modern Facilities</h3>
+                  <p class="card-text">
+                    Access state-of-the-art laboratories, libraries, and digital
+                    resources to enhance your learning experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action Section -->
+      <section class="cta-section py-5 bg-primary text-white">
+        <div class="container text-center">
+          <h2>Ready to Begin Your Academic Journey?</h2>
+          <p class="lead">
+            Applications are now open for the Spring 2025 semester
+          </p>
+          <a href="registration.html" class="btn btn-light btn-lg mt-3"
+            >Register Now</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Prime University</h5>
+            <p>Shaping Future Leaders Through Quality Education</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> 123 University Avenue,
+              Dhaka<br />
+              <i class="fas fa-phone"></i> (880) 123-4567<br />
+              <i class="fas fa-envelope"></i> info@primeuniversity.edu
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">About Us</a></li>
+              <li><a href="#" class="text-white">Programs</a></li>
+              <li><a href="#" class="text-white">Admissions</a></li>
+              <li><a href="#" class="text-white">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h5>Connect With Us</h5>
+            <div class="social-links">
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col text-center">
+            <p class="mb-0">
+              &copy; 2025 Prime University. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/slider.js"></script>
+  </body>
+</html>
